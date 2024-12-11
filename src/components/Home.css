@@ -1,0 +1,59 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Student.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.title-container {
+    margin-bottom: 20px; /* Space between title and buttons */
+}
+
+.centered-title {
+    font-weight: bold;
+    font-size: 3rem; /* Adjusted for better readability */
+    background-color: rgba(14, 14, 14, 0.7); /* Ink Blue color with transparency */
+    padding: 20px; /* Adds space around the text */
+    border-radius: 10px; /* Rounded corners for the title */
+}
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(60, 193, 12, 0.996); /* Light hover effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .centered-title {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+    .button {
+        font-size: 1rem; /* Smaller button font size for mobile */
+    }
+}

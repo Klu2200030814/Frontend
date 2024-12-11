@@ -1,0 +1,80 @@
+/* Global styles to prevent overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #030208, #021639);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.navbar h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background-color: #ffffff;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #e0e0e0;
+  color: #2575fc;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.4);
+}
+
+/* Style for the clickable navbar title */
+.navbar-title {
+  text-decoration: none;
+}
+
+.navbar-title h2 {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Additional style for the Logout button */
+.logout-button {
+  background-color: #ff6666; /* Distinct color for Logout */
+  color: #ffffff;
+}
+
+.logout-button:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+

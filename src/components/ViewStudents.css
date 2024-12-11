@@ -1,0 +1,186 @@
+/* General Container for the View Students Page */
+.view-students-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+/* Body Background Gradient */
+body {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #34495e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Heading */
+.view-students-container h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.table th,
+.table td {
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.table th {
+  background-color: #3498db;
+  color: white;
+  border: 1px solid #ddd;
+}
+
+.table td {
+  background: rgba(255, 255, 255, 0.9);
+  color: #34495e;
+  border: 1px solid #ddd;
+}
+
+/* Hover Effects for Table Rows */
+.table tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: rgba(236, 240, 241, 0.5);
+}
+
+/* Sort Button Styling */
+.sort-button {
+  background: linear-gradient(135deg, #4ca1af, #2c3e50);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  margin: 15px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sort-button:hover {
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.sort-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for buttons (Update, Delete, Save, Cancel) */
+.update-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-right: 10px; /* Space between buttons */
+}
+
+/* Update Button */
+.update-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.update-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(106, 17, 203, 0.3);
+}
+
+.update-button:active {
+  transform: scale(0.95);
+  opacity: 0.85;
+}
+
+/* Delete Button */
+.delete-button {
+  background: linear-gradient(135deg, #e74c3c, #f39c12);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.delete-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(231, 76, 60, 0.3);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+  opacity: 0.85;
+}
+
+/* Save Button */
+.save-button {
+  background: #2ecc71;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.save-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+}
+
+.save-button:active {
+  transform: scale(0.95);
+  opacity: 0.85;
+}
+
+/* Cancel Button */
+.cancel-button {
+  background: #f39c12;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cancel-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(243, 156, 18, 0.3);
+}
+
+.cancel-button:active {
+  transform: scale(0.95);
+  opacity: 0.85;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}

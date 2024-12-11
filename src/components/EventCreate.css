@@ -1,0 +1,84 @@
+/* Container for the main form background */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Example gradient similar to ViewStudent.css */
+}
+
+/* Paper card styling */
+.paper-card {
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 32px;
+    border-radius: 20px; /* More rounded corners */
+    border: 1px solid rgba(238, 6, 6, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    color: black; /* Changed text color to black */
+    max-width: 800px; /* Limiting the width */
+    margin: auto; /* Center align */
+    overflow: hidden;
+}
+
+/* Typography for headers */
+.header-text {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3); /* Adjusted shadow for black text */
+    color: black; /* Changed text color to black */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin-bottom: 20px; /* Slight margin below the title */
+}
+
+/* TextField styling */
+.text-field {
+    width: 100%;
+    margin-bottom: 16px; /* Reduced margin bottom for compactness */
+    color: black; /* Changed text color to black */
+}
+
+.text-field .MuiOutlinedInput-root {
+    border-color: rgba(0, 0, 0, 0.6); /* Changed border color to black */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); /* Adjusted shadow for black text */
+}
+
+.text-field .MuiInputLabel-root {
+    color: rgba(0, 0, 0, 0.8); /* Changed label color to black */
+}
+
+.text-field:hover .MuiOutlinedInput-root {
+    border-color: rgba(0, 0, 0, 1); /* Changed hover border color to black */
+}
+
+/* File input styling */
+.file-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.6); /* Changed border color to black */
+    border-radius: 10px; /* More rounded corners */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black; /* Changed text color to black */
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjusted shadow for black text */
+    margin-bottom: 16px; /* Reduced margin for better compactness */
+}
+
+/* Button styling */
+.submit-button {
+    background-color: rgba(76, 175, 80, 0.8); /* Green shade */
+    color: black; /* Changed button text color to black */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: rgba(76, 175, 80, 1); /* More solid green on hover */
+}
+
+/* Adjustments for Snackbar */
+.MuiSnackbar-root {
+    color: black;
+}
+
+.MuiSnackbarMessage-root {
+    background-color: rgba(76, 175, 80, 0.7); /* Greenish background */
+    color: black; /* Black text color for Snackbar */
+}
